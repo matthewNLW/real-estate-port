@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Developments — Sandstone Development</title>
+  <meta name="description" content="Explore our portfolio of residential and mixed-use developments across the Southeast. Planned, under construction, and completed projects." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/base.css" />
+  <link rel="stylesheet" href="src/css/layout.css" />
+  <link rel="stylesheet" href="src/css/developments.css" />
+</head>
+<body class="developments-page">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html">
+        <span class="brand-name">Sandstone</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a class="nav-link is-active" href="developments.html">Developments</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+      <div class="container">
+        <p class="overline">Our Portfolio</p>
+        <h1>Developments</h1>
+        <p class="page-lead">A selection of our residential and mixed-use projects—planned, under construction, and completed.</p>
+      </div>
+    </section>
+
+    <!-- FILTER (optional, simple) -->
+    <section class="filter-bar">
+      <div class="container">
+        <nav class="filter-nav" aria-label="Filter projects">
+          <button class="filter-btn is-active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="planned">Planned</button>
+          <button class="filter-btn" data-filter="construction">Under Construction</button>
+          <button class="filter-btn" data-filter="completed">Completed</button>
+        </nav>
+      </div>
+    </section>
+
+    <!-- DEVELOPMENTS LIST -->
+    <section class="developments-section">
+      <div class="container">
+        <div class="developments-grid">
+
+          <article class="development-card" data-status="construction">
+            <a href="development-detail.html" class="card-link">
+              <div class="card-image">
+                <img src="public/assets/images/development-project.png" alt="The Meridian at Southline" />
+                <span class="card-status">Under Construction</span>
+              </div>
+              <div class="card-content">
+                <h2>The Meridian at Southline</h2>
+                <p class="card-location">Charlotte, NC</p>
+                <p class="card-type">Mixed-Use · 180 Units · 22,000 SF Retail</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="development-card" data-status="completed">
+            <a href="development-detail.html" class="card-link">
+              <div class="card-image">
+                <img src="public/assets/images/development-hero.png" alt="Ashford Gardens" />
+                <span class="card-status">Completed 2024</span>
+              </div>
+              <div class="card-content">
+                <h2>Ashford Gardens</h2>
+                <p class="card-location">Atlanta, GA</p>
+                <p class="card-type">Residential · 96 Townhomes</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="development-card" data-status="planned">
+            <a href="development-detail.html" class="card-link">
+              <div class="card-image">
+                <img src="public/assets/images/development-hero.png" alt="Riverstone Commons" />
+                <span class="card-status">Planned</span>
+              </div>
+              <div class="card-content">
+                <h2>Riverstone Commons</h2>
+                <p class="card-location">Greenville, SC</p>
+                <p class="card-type">Mixed-Use · 240 Units · 35,000 SF Commercial</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="development-card" data-status="completed">
+            <a href="development-detail.html" class="card-link">
+              <div class="card-image">
+                <img src="public/assets/images/development-project.png" alt="Oakmont Residences" />
+                <span class="card-status">Completed 2023</span>
+              </div>
+              <div class="card-content">
+                <h2>Oakmont Residences</h2>
+                <p class="card-location">Raleigh, NC</p>
+                <p class="card-type">Residential · 64 Units</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="development-card" data-status="construction">
+            <a href="development-detail.html" class="card-link">
+              <div class="card-image">
+                <img src="public/assets/images/development-hero.png" alt="The Foundry District" />
+                <span class="card-status">Under Construction</span>
+              </div>
+              <div class="card-content">
+                <h2>The Foundry District</h2>
+                <p class="card-location">Nashville, TN</p>
+                <p class="card-type">Mixed-Use · 320 Units · 48,000 SF Retail</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="development-card" data-status="planned">
+            <a href="development-detail.html" class="card-link">
+              <div class="card-image">
+                <img src="public/assets/images/development-project.png" alt="Harborview Place" />
+                <span class="card-status">Planned</span>
+              </div>
+              <div class="card-content">
+                <h2>Harborview Place</h2>
+                <p class="card-location">Charleston, SC</p>
+                <p class="card-type">Residential · 112 Units</p>
+              </div>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <span class="brand-name">Sandstone</span>
+        <p class="footer-tagline">Residential & mixed-use development</p>
+      </div>
+
+      <nav class="footer-nav">
+        <a href="developments.html">Developments</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="footer-contact">
+        <p>Charlotte, NC</p>
+        <p><a href="mailto:info@sandstonedev.com">info@sandstonedev.com</a></p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span id="year"></span> Sandstone Development. Portfolio demonstration.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="src/js/main.js"></script>
+</body>
+</html>

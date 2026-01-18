@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sandstone Development — Residential & Mixed-Use Real Estate</title>
+  <meta name="description" content="Sandstone Development creates enduring residential and mixed-use communities. Thoughtful design, lasting value, and responsible growth across the Southeast." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/base.css" />
+  <link rel="stylesheet" href="src/css/layout.css" />
+  <link rel="stylesheet" href="src/css/home.css" />
+</head>
+<body class="home-page">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- Minimal Header -->
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html">
+        <span class="brand-name">Sandstone</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a class="nav-link" href="developments.html">Developments</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO: Restrained, architectural -->
+    <section class="hero">
+      <div class="hero-bg">
+        <img src="public/assets/images/development-hero.png" alt="" aria-hidden="true" />
+      </div>
+      <div class="container">
+        <div class="hero-content">
+          <h1>Building communities<br>that endure.</h1>
+          <p class="hero-lead">
+            We develop residential and mixed-use properties with a long-term perspective—creating places where people live, work, and invest with confidence.
+          </p>
+          <a class="hero-cta" href="developments.html">Explore Developments</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- VALUE STATEMENT: Simple, editorial -->
+    <section class="section-statement">
+      <div class="container">
+        <div class="statement-content">
+          <p class="overline">Our Approach</p>
+          <h2>
+            We take a measured approach to development—prioritizing quality over speed, community impact over short-term returns, and design excellence as a foundation for lasting value.
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED DEVELOPMENTS: Editorial, not cards -->
+    <section class="section-developments">
+      <div class="container">
+        <header class="section-header">
+          <p class="overline">Featured Developments</p>
+          <h2>Current Projects</h2>
+        </header>
+
+        <div class="developments-list">
+          <article class="development-item">
+            <a href="development-detail.html" class="development-link">
+              <div class="development-image">
+                <img src="public/assets/images/development-project.png" alt="The Meridian at Southline" />
+              </div>
+              <div class="development-info">
+                <h3>The Meridian at Southline</h3>
+                <p class="development-meta">Charlotte, NC · Mixed-Use · Under Construction</p>
+                <p class="development-desc">A 4.2-acre mixed-use development featuring 180 residential units and 22,000 SF of ground-floor retail in the emerging Southline district.</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="development-item">
+            <a href="development-detail.html" class="development-link">
+              <div class="development-image">
+                <img src="public/assets/images/development-hero.png" alt="Ashford Gardens" />
+              </div>
+              <div class="development-info">
+                <h3>Ashford Gardens</h3>
+                <p class="development-meta">Atlanta, GA · Residential · Completed 2024</p>
+                <p class="development-desc">A 96-unit townhome community designed around shared green spaces, pedestrian connectivity, and sustainable construction practices.</p>
+              </div>
+            </a>
+          </article>
+        </div>
+
+        <div class="section-action">
+          <a href="developments.html" class="text-link">View All Developments →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA: Understated -->
+    <section class="section-cta">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Interested in our work?</h2>
+          <p>We welcome conversations with investors, partners, and communities seeking thoughtful development.</p>
+          <a href="contact.html" class="cta-link">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Minimal Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <span class="brand-name">Sandstone</span>
+        <p class="footer-tagline">Residential & mixed-use development</p>
+      </div>
+
+      <nav class="footer-nav">
+        <a href="developments.html">Developments</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="footer-contact">
+        <p>Charlotte, NC</p>
+        <p><a href="mailto:info@sandstonedev.com">info@sandstonedev.com</a></p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span id="year"></span> Sandstone Development. Portfolio demonstration.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="src/js/main.js"></script>
+</body>
+</html>

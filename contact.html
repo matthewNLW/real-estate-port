@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Sandstone Development</title>
+  <meta name="description" content="Connect with Sandstone Development for investment inquiries, partnership opportunities, or general information about our projects." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/base.css" />
+  <link rel="stylesheet" href="src/css/layout.css" />
+  <link rel="stylesheet" href="src/css/contact.css" />
+</head>
+<body class="contact-page">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html">
+        <span class="brand-name">Sandstone</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a class="nav-link" href="developments.html">Developments</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link is-active" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+      <div class="container">
+        <p class="overline">Get in Touch</p>
+        <h1>Contact</h1>
+        <p class="page-lead">We welcome inquiries from investors, partners, and communities.</p>
+      </div>
+    </section>
+
+    <!-- CONTACT CONTENT -->
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          
+          <!-- CONTACT FORM -->
+          <div class="contact-form-wrapper">
+            <form class="contact-form" data-contact-form>
+              <div class="form-group">
+                <label class="form-label" for="name">Name</label>
+                <input class="form-input" type="text" id="name" name="name" autocomplete="name" required />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="email">Email</label>
+                <input class="form-input" type="email" id="email" name="email" autocomplete="email" required />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="phone">Phone <span class="optional">(optional)</span></label>
+                <input class="form-input" type="tel" id="phone" name="phone" autocomplete="tel" />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="inquiry">Inquiry Type</label>
+                <select class="form-input" id="inquiry" name="inquiry" required>
+                  <option value="" disabled selected>Select one</option>
+                  <option value="investment">Investment Inquiry</option>
+                  <option value="partnership">Partnership / Joint Venture</option>
+                  <option value="brokerage">Brokerage / Leasing</option>
+                  <option value="municipal">Municipal / Government</option>
+                  <option value="general">General Information</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="message">Message</label>
+                <textarea class="form-input" id="message" name="message" rows="5" required></textarea>
+              </div>
+
+              <div class="form-footer">
+                <button class="form-submit" type="submit">Send Message</button>
+                <p class="form-note" data-form-status aria-live="polite"></p>
+              </div>
+            </form>
+          </div>
+
+          <!-- CONTACT INFO -->
+          <aside class="contact-aside">
+            <div class="contact-block">
+              <h2>Office</h2>
+              <p>
+                Sandstone Development<br>
+                201 South Tryon Street<br>
+                Suite 1600<br>
+                Charlotte, NC 28202
+              </p>
+            </div>
+
+            <div class="contact-block">
+              <h2>Email</h2>
+              <p>
+                <a href="mailto:info@sandstonedev.com">info@sandstonedev.com</a>
+              </p>
+            </div>
+
+            <div class="contact-block">
+              <h2>Investor Relations</h2>
+              <p>
+                For investment inquiries, please contact us directly or use the form provided. All inquiries are confidential.
+              </p>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <span class="brand-name">Sandstone</span>
+        <p class="footer-tagline">Residential & mixed-use development</p>
+      </div>
+
+      <nav class="footer-nav">
+        <a href="developments.html">Developments</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="footer-contact">
+        <p>Charlotte, NC</p>
+        <p><a href="mailto:info@sandstonedev.com">info@sandstonedev.com</a></p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span id="year"></span> Sandstone Development. Portfolio demonstration.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="src/js/main.js"></script>
+  <script type="module" src="src/js/form.js"></script>
+</body>
+</html>
