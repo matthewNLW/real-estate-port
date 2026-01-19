@@ -1,0 +1,20 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /.git/
+Disallow: /.env
+
+# Allow legitimate bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Block aggressive scrapers (optional, but good practice if user wants to limit requests)
+User-agent: GPTBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
