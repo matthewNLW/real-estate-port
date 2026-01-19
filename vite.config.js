@@ -6,11 +6,11 @@ export default defineConfig({
     outDir: 'dist',
     rollupOptions: {
       input: {
-        main: resolve(__dirname, "index.html"),
-        about: resolve(__dirname, "about.html"),
-        developments: resolve(__dirname, "developments.html"),
-        developmentDetail: resolve(__dirname, "development-detail.html"),
-        contact: resolve(__dirname, "contact.html"),
+        main: 'index.html',
+        about: 'about.html',
+        developments: 'developments.html',
+        developmentDetail: 'development-detail.html',
+        contact: 'contact.html',
       },
     },
   },
